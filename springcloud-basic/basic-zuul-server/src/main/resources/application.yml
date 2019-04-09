@@ -1,0 +1,16 @@
+#服务名称
+spring:
+  application:
+    name: basic-zull-server
+#服务端口
+server:
+  port: 8000
+#eureka连接信息
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://jinfeng:jinfeng@127.0.0.1:8100/eureka/,http://jinfeng:jinfeng@127.0.0.1:8101/eureka/
