@@ -29,6 +29,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>
         <alibaba.fastjson.version>1.2.47</alibaba.fastjson.version>
+        <common.collections.version>3.2.2</common.collections.version>
     </properties>
 
     <dependencies>
@@ -42,6 +43,27 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${alibaba.fastjson.version}</version>
+        </dependency>
+        <!--集成lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <!--集成测试-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${common.collections.version}</version>
         </dependency>
     </dependencies>
 

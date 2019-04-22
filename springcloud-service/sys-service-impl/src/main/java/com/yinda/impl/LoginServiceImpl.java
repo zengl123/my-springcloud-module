@@ -1,6 +1,7 @@
 package com.yinda.impl;
 
 import com.yinda.ILoginService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.ui.Model;
 import org.springframework.web.servlet.ModelAndView;
@@ -21,6 +22,7 @@ import javax.servlet.http.HttpSession;
  * @UpdateRemark:
  * @Version:
  */
+@Slf4j
 @Service
 public class LoginServiceImpl implements ILoginService {
     /**

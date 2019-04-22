@@ -8,6 +8,7 @@
         <module>basic-eureka-center-server</module>
         <module>basic-zuul-server</module>
         <module>basic-eureka-node-server</module>
+        <module>basic-elk-kafka-server</module>
     </modules>
 
     <parent>

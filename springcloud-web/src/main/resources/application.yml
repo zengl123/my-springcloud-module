@@ -1,7 +1,6 @@
-#\u670D\u52A1\u7AEF\u53E3
-server:
-  port: 8300
 spring:
   application:
-  #\u670D\u52A1\u540D\u79F0
+    #服务名称
     name: web-server
+  profiles:
+    include: dev

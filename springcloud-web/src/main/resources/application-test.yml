@@ -1,0 +1,25 @@
+server:
+  port: 8500
+spring:
+  profiles:
+    #开发环境配置
+    active: test
+  #eureka权限配置
+  security:
+    basic:
+      enabled: true
+    user:
+      name: jinfeng
+      password: jinfeng
+#eureka配置
+eureka:
+  instance:
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8100/eureka/,http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8101/eureka/
+#日志配置
+logging:
+  config: classpath:log4j2-dev.xml

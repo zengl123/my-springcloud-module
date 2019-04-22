@@ -1,5 +1,6 @@
 package com.yinda;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,9 +16,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @UpdateRemark:
  * @Version:
  */
+@Slf4j
 @SpringBootApplication
 public class SysServer {
     public static void main(String[] args) {
+        log.debug("sys 服务正常启动");
         SpringApplication.run(SysServer.class, args);
     }
 }
